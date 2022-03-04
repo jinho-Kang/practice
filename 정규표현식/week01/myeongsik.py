@@ -29,7 +29,7 @@
 20220304
 1.Regex_Pattern = r'^[02468a-zA-Z]{40}[13579\s]{5}$'
 
-2.Regex_Pattern = r'^\d{1,2}[a-zA-Z]{3,}\.{0,3}$' (다시 풀기)
+2.Regex_Pattern = r'^\d{1,2}[a-zA-Z]{3,}\.{0,3}$'
 
 3.Regex_Pattern = r'^\d{2,}[a-z]*[A-Z]*$'
 
