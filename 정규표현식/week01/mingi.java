@@ -60,6 +60,8 @@ public class Gohome {
 
 		 /* ^는 문자열이 시작되었음을 알려줌 /  . * << 문자가 수 개 반복된다.
 		
+		 ============================================================================================
+
          1. **Matching Word Boundaries**
 
 		tester.checker("\\b[aeiuoAEIOU][a-zA-z]*\\b"); // Use \\ instead of using \
@@ -78,7 +80,46 @@ public class Gohome {
 
 		→ 문자 ^ $안에 넣어줘야하는 조건을 잘 모르겠음.
 
-		 
+		-------------------------------------------------------------------------------------------
+		-------------------------------------------------------------------------------------------
+1. **Matching {x} Repetitions**
+
+tester.checker("^[a-zA-Z02468]{40}[13579\\s]{5}$");
+
+- must be of length equal to **`45`**.
+- The first  characters should consist of **`letters`**(both lowercase and uppercase), or of **`even digits`**.
+- The last  characters should consist of **`odd digits`** or **`whitespace characters`**.
+
+2. **Matching {x, y} Repetitions**
+
+tester.checker("^\\d{1,2}[a-zA-Z]{3,}\\.{0,3}$"); // Use \\ instead of using \
+
+- should begin with  or  **`digits`**.
+- After that,  should have  or more **`letters`** (both lowercase and uppercase).
+- Then  should end with up to  **`.`** symbol(s). You can end with  to  `.` symbol(s), inclusively.
+
+3. **Matching Zero Or More Repetitions**
+
+tester.checker("^\\d{2,}[a-z]*[A-Z]*$"); // Use \\ instead of using \
+
+- should begin with  or more **`digits`**.
+- After that,  should have  or more **`lowercase letters`**.
+- should end with  or more **`uppercase letters`**
+
+4. **Matching One Or More Repetitions**
+
+tester.checker("^\\d+[A-Z]+[a-z]+$"); // Use \\ instead of using \
+
+- should begin with  or more **`digits`**.
+- After that,  should have  or more **`uppercase letters`**.
+- should end with  or more **`lowercase letters`**.
+
+5. **Matching Ending Items**
+
+tester.checker("^[a-zA-Z]*s$"); // Use \\ instead of using \
+
+- should consist of only lowercase and uppercase letters (no numbers or symbols).
+- should end in `s`.
 		*/
 
 
