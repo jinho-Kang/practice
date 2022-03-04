@@ -65,3 +65,29 @@ Regex_Pattern = r'^(Mr|Mrs|Ms|Dr|Er)\.[a-zA-Z]{1,}$'	# Do not delete 'r'.
 # 그리고 \.은 .을의미
 # 마지막은 문자열 a-zA-Z니까저렇게써주고 1번이상이라고 문제에서 그랬으니까{1,}
 # 그리고 문자열을 저렇게 종료해야되니까$
+
+
+#13 Matching {x} Repetitions
+import re
+Regex_Pattern = r'^[a-zA-Z02468]{40}[13579 \t\n\r\f\v]{5}$'	# Do not delete 'r'.
+# 0도 짝수로치네,,
+
+#14 Matching {x, y} Repetitions
+import re
+Regex_Pattern = r'^[123]{1,2}[a-zA-Z]{3,}\.{0,3}$'	# Do not delete 'r'.
+
+#15 Matching Zero Or More Repetitions
+import re
+Regex_Pattern = r'^\d{2,}[a-z]*[A-Z]*$'	# Do not delete 'r'.
+
+#16 Matching One Or More Repetitions
+import re
+Regex_Pattern = r'^\d+[A-Z]+[a-z]+$'	# Do not delete 'r'.
+
+#17 Matching Ending Items
+import re
+Regex_Pattern = r'^[a-zA-Z]*s$'	# Do not delete 'r'.
+
+# *는 0번부터 반복, +는 1번부터반복
+# $는 뭘로 끝나야 한다. ^는 뭘로 시작해야 한다.
+# \.은 .을 의미
